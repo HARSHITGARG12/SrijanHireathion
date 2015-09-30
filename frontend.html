@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	</script>
+	<script>
+
+		$(document).ready(function(){
+
+			$("div").click(function(){
+				$(this).addClass("d1")
+			});
+		
+		});
+
+	</script>
+
+	<style> 
+		div {
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			position: relative;
+		
+		}
+		div:hover{
+			background-color:blue;
+		}
+
+		div.d1 {
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			position: relative;
+			-webkit-animation-name: move1;  
+			-webkit-animation-duration: 8s;      
+		}
+		 
+		@-webkit-keyframes move1 {
+			0%   {background-color:red; left:0px; top:0px;}
+			100%  {background-color:red; left:1200px; top:0px;}
+		}
+	</style>
+</head>
+<body>
+
+<div id="d1"></div>
+
+</body>
+</html>

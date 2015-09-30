@@ -1,0 +1,5 @@
+Input File Format
+First Line : Number of Test Cases
+Each Test Case has two lines
+Line 1 : Number of positive integers
+Line 2 : List of positive integers
